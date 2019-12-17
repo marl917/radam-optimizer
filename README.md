@@ -1,88 +1,30 @@
-# Project Title
-
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+# Study of RAdam based on the paper "On the Variance of the Adaptive Learning Rate and Beyond" by Liu et Al. (2019a)
 
 ```
-Give examples
+@article{liu2019radam,
+  title={On the Variance of the Adaptive Learning Rate and Beyond},
+  author={Liu, Liyuan and Jiang, Haoming and He, Pengcheng and Chen, Weizhu and Liu, Xiaodong and Gao, Jianfeng and Han, Jiawei},
+  journal={arXiv preprint arXiv:1908.03265},
+  year={2019}
+}
 ```
+I also used the code implemented from the paper "On the adequacy of untuned warmup for adaptive optimization" by Jerry Ma and Denis Yarats to test Adam with warmup.
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running
+In this project, I compare the performance of RAdam with Adam and Adam with warmup using the Fashion MNIST dataset. More precisely, the code evaluate the robustness of these optimization algorithms to variations of the learning rate. My report 
+delves deeper in the theory and the implementation.
 
-Say what the step will be
+## Prerequisites
 
-```
-Give the example
-```
+Here is the list of libraries needed: torch, math , torchvision, pytorch-warmup, tensorflow, tensorboard
 
-And repeat
 
-```
-until finished
-```
+## Results
 
-End with an example of getting some data out of the system or using it for a little demo
+Below are the learning curves I obtained after training with these 3 optimizers with a batch size of 1000.
+The performance for Radam : 
 
-## Running the tests
+![Train Loss](https://github.com/marl917/radam-optimizer/blob/master/images/Accuracy_Radam_lr_r.png)
 
-Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
