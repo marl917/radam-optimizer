@@ -11,7 +11,7 @@
 I also used the code from the paper "On the adequacy of untuned warmup for adaptive optimization",  	arXiv:1910.04209, 2019, Jerry Ma and Denis Yarats, where Adam with warmup was implemented.
 
 
-In this project, I compare the performance of RAdam with Adam and Adam with warmup using the Fashion MNIST dataset. More precisely, the code evaluate the robustness of these optimization algorithms to variations of the learning rate. My report 
+In this project, I compare the performance of RAdam with Adam and Adam with warmup using the Fashion MNIST dataset. More precisely, the code evaluates the robustness of these optimization algorithms to variations of the learning rate. My report 
 delves deeper in the theory and the implementation.
 
 ## Prerequisites
