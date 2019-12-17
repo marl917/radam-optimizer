@@ -22,20 +22,20 @@ Here is the list of libraries needed: torch, math , torchvision, pytorch-warmup,
 ## Results
 
 Below are the performance I obtained after training these 3 optimizers with a batch size of 1000 with different values for learning rate : 
-| ![](https://github.com/marl917/radam-optimizer/blob/master/images/barres_lr.png) |
+![](https://github.com/marl917/radam-optimizer/blob/master/images/barres_lr.png)
 
-Learning curves for Radam : 
-Train Loss             |  Test Accuracy
+
+Train Loss for Radam            |  Test Accuracy for Radam
 :---------------------:|:-------------------------:
 ![](https://github.com/marl917/radam-optimizer/blob/master/images/Loss_Radam_lr_r.png) |  ![](https://github.com/marl917/radam-optimizer/blob/master/images/Accuracy_Radam_lr_r.png)
 
-Learning curves for Adam : 
-Train Loss             |  Test Accuracy
+
+Train Loss for Adam             |  Test Accuracy for Adam
 :---------------------:|:-------------------------:
 ![](https://github.com/marl917/radam-optimizer/blob/master/images/Loss_Adam_lr_r.png) |  ![](https://github.com/marl917/radam-optimizer/blob/master/images/Accuracy_Adam_lr_r.png)
 
-Learning curves for Adam with warmup heuristic : 
-Train Loss             |  Test Accuracy
+
+Train Loss for Adam with warmup            |  Test Accuracyfor Adam with warmup
 :---------------------:|:-------------------------:
 ![](https://github.com/marl917/radam-optimizer/blob/master/images/Loss_AdamW_r.png) |  ![](https://github.com/marl917/radam-optimizer/blob/master/images/Accuracy_AdamW_r.png)
 
