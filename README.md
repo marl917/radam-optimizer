@@ -24,7 +24,10 @@ Here is the list of libraries needed: torch, math , torchvision, pytorch-warmup,
 Below are the learning curves I obtained after training with these 3 optimizers with a batch size of 1000.
 The performance for Radam : 
 
-![Train Loss](https://github.com/marl917/radam-optimizer/blob/master/images/Accuracy_Radam_lr_r.png)
+![Train Loss](https://github.com/marl917/radam-optimizer/blob/master/images/Loss_Radam_lr_r.png) ![Test Accuracy](https://github.com/marl917/radam-optimizer/blob/master/images/Accuracy_Radam_lr_r.png)
+
+
+
 
 
 
