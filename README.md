@@ -8,7 +8,7 @@
   year={2019}
 }
 ```
-I also used the code implemented from the paper "On the adequacy of untuned warmup for adaptive optimization" by Jerry Ma and Denis Yarats to test Adam with warmup.
+I also used the code from the paper "On the adequacy of untuned warmup for adaptive optimization",  	arXiv:1910.04209, 2019, Jerry Ma and Denis Yarats, where Adam with warmup was implemented.
 
 
 In this project, I compare the performance of RAdam with Adam and Adam with warmup using the Fashion MNIST dataset. More precisely, the code evaluate the robustness of these optimization algorithms to variations of the learning rate. My report 
@@ -16,12 +16,12 @@ delves deeper in the theory and the implementation.
 
 ## Prerequisites
 
-Here is the list of libraries needed: torch, math , torchvision, pytorch-warmup, tensorflow, tensorboard
+Here is the list of libraries on Python 3.6 needed: torch 1.3.1, torchvision 0.4.2, pytorch-warmup 0.0.4, tensorflow 2.0.0, tensorboard 2.0.2
 
 
 ## Results
 
-Below are the performance I obtained after training these 3 optimizers with a batch size of 1000 with different values for learning rate : 
+Below are the performance obtained after training these 3 optimizers with a batch size of 1000 with different values for learning rate : 
 
 
 Train Loss for Radam            |  Test Accuracy for Radam
@@ -34,7 +34,7 @@ Train Loss for Adam             |  Test Accuracy for Adam
 ![](https://github.com/marl917/radam-optimizer/blob/master/images/Loss_Adam_lr_r.png) |  ![](https://github.com/marl917/radam-optimizer/blob/master/images/Accuracy_Adam_lr_r.png)
 
 
-Train Loss for Adam with warmup            |  Test Accuracyfor Adam with warmup
+Train Loss for Adam with warmup            |  Test Accuracy for Adam with warmup
 :---------------------:|:-------------------------:
 ![](https://github.com/marl917/radam-optimizer/blob/master/images/Loss_AdamW_r.png) |  ![](https://github.com/marl917/radam-optimizer/blob/master/images/Accuracy_AdamW_r.png)
 
